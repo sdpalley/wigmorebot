@@ -6,23 +6,21 @@
 
 This is a version of GitHub's Campfire bot, hubot, and inspired by [compleatang's](https://github.com/compleatang) Billings (of which this is a loose fork).  (Thanks,  Casey, for introducing me to Billings).  **You're welcome to copy/fork Wigmore, of course, but you're better off  building your own from Github's original hubot code, which is [at https://github.com/github/hubot](https://github.com/github/hubot).**  
 
-You can also click [here](#readme) to skip to instructions contained in the original 'readme file', which follow my additions here.
-
 ####2. Why should lawyers care?
 
 For lawyers out there who are wondering what the point of bot is, here are a couple of useful things that a Wigmore or Billings can do, with the right scripts added:
 
-**A.  Wigmore can help us 'remember ' things. **  
+ **A.  Wigmore can help us 'remember ' things. **  
 
 If I write    `wigmore remember negligence is a tort` this is saved as a `key: value` pair ` negligence: tort `.  When I later ask `wigmore what is negligence?` the bot will remind me that `negligence is a tort`.
 
-  This doesn't mean that Wigmore **knows** what a tort **is**.   (It's not artificial intelligence).  And if doesn't distinguish (yet) between correct information ('negligence is a tort') and incorrect information ('negligence is a type of cheese').  
+This doesn't mean that Wigmore **knows** what a tort **is**.   (It's not artificial intelligence).  And if doesn't distinguish (yet) between correct information ('negligence is a tort') and incorrect information ('negligence is a type of cheese').  
 
 AI or (in this case) not, it's a simple way to create collections of structured data using plain English sytax.  What's done with the data is a different question.
 
  **B. Wigmore can  help perform research. **  
 
- If you write `wigmore abstract negligence` it will return a definition culled from on-line searches.  Now, the result is of course only as good as the search engine references that Wigmore is provided in the `abstract` script (which could certainly be augmented). But it's a start.
+If you write `wigmore abstract negligence` it will return a definition culled from on-line searches.  Now, the result is of course only as good as the search engine references that Wigmore is provided in the `abstract` script (which could certainly be augmented). But it's a start.
 
 **C.  Wigmore can help keep your calendar for you.**
 
@@ -56,7 +54,7 @@ Github's original readme follows, below.  The instructions work way too well for
 
 --
 
-<a name="readme">###Original Readme###
+###Original Readme###
 
 -----
 
