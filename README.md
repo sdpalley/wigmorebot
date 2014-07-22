@@ -4,7 +4,7 @@
 
 ####1.  What is this?
 
-This is a version of GitHub's Campfire bot, hubot, and inspired by [compleatang's](https://github.com/compleatang) Billings (of which this is a loose fork).  (Thanks,  Casey, for introducing me to Billings).  **You're welcome to copy/fork Wigmore, of course, but you're better off  building your own from Github's original hubot code, which is [at https://github.com/github/hubot](https://github.com/github/hubot).**  
+Wigmore is an implementation of GitHub's Campfire bot, hubot, inspired by [compleatang's](https://github.com/compleatang) Billings. Thanks,  Casey, for introducing me to Billings.  **You're welcome to copy/fork Wigmore, of course, but you're better off building your own from Github's original hubot code, which is [at https://github.com/github/hubot](https://github.com/github/hubot).**  
 
 ####2. Why should lawyers care?
 
@@ -30,7 +30,7 @@ I don't have this features added, actually, but it could be by adding  `news.cof
 
 **E.  Wigmore helps with automation of many repetitive tasks, using plain English.**
 
-In short, Wigmore can automate the performance of many tasks** -- either with existing scripts or ones that are created.  It will interact with you using plain English, on the command line or in a graphical user interface.  And it is pretty  darn cool.  
+In short, Wigmore can automate the performance of many tasks -- either with existing scripts or ones that are created.  It will interact with you using plain English, on the command line or in a graphical user interface.  And it is pretty  darn cool.  
 
 And there's no reason why lawyers can't have robots too.
 
