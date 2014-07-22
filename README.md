@@ -1,6 +1,6 @@
 ### Wigmore:  Because Lawyers Should Have Robots Too.
 
-This is a version of GitHub's Campfire bot, hubot, and inspired by @compleatang's Billings (of which this is a loose fork).  (Thank you Casey for introducing me to this).   For lawyers out there who are wondering what the point of bot is, here are a couple of useful things that a Wigmore or Billings can do:
+This is a version of GitHub's Campfire bot, hubot, and inspired by [compleatang's](https://github.com/compleatang) Billings (of which this is a loose fork).  (Thanks,  Casey, for introducing me to Billings).   For lawyers out there who are wondering what the point of bot is, here are a couple of useful things that a Wigmore or Billings can do, with the right scripts added:
 
 1. Wigmore can 'remember ' things.  If I write `wigmore remember negligence is a tort` this is saved as a `key:value` pair.  When I later ask `wigmore what is negligence?` the bot will remind me that `negligence is a tort`.  
 
@@ -13,6 +13,12 @@ This is a version of GitHub's Campfire bot, hubot, and inspired by @compleatang'
 5.  In short, Wigmore can automate the performance of many tasks -- either with existing scripts or ones that are created.  It will interact with you using plain English, on the command line or in a graphical user interface.
 
 It is pretty  darn cool.  And there's no reason why lawyers can't have robots too.
+
+While you don't have to be a skilled programmer to build your own bot, it does take some technical knowledge in order to meld together many (pre-built) moving parts.  Here are a couple of the rookie mistakes I made:
+
+- You need 'redis' to run your bot locally . . . and you have start it .
+
+- The scripts contain  'dependencies' -- if you look in the `package.json` file you'll see  a reference to
 
 ###### The original readme follows, below.  The instructions work way too well for me to mess with them.
 
