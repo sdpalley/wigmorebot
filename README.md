@@ -30,7 +30,7 @@ AI or (in this case) not, it's a simple way to create collections of structured 
 
 I don't have this features added, actually, but it could be by adding  `news.coffee` to `package.json` and then typing `wigmore news me on topic` in your interface.  Not a bad thing to try if you're just getting started.
 
-** E.  Wigmore helps with automation of many repetitive tasks, using plain English.**
+**E.  Wigmore helps with automation of many repetitive tasks, using plain English.**
 
 In short, Wigmore can automate the performance of many tasks** -- either with existing scripts or ones that are created.  It will interact with you using plain English, on the command line or in a graphical user interface.  And it is pretty  darn cool.  
 
