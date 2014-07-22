@@ -1,4 +1,4 @@
-# Wigmore:  Because Lawyer's Should Have Robots Too.
+# Wigmore:  Because Lawyers Should Have Robots Too.
 
 This is a version of GitHub's Campfire bot, hubot. He's pretty cool.
 
