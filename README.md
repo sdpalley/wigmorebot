@@ -10,7 +10,7 @@ This is a version of GitHub's Campfire bot, hubot, and inspired by [compleatang'
 
 For lawyers out there who are wondering what the point of bot is, here are a couple of useful things that a Wigmore or Billings can do, with the right scripts added:
 
- **A.  Wigmore can help us 'remember ' things. **  
+**A.  Wigmore can help us 'remember ' things.**  
 
 If I write    `wigmore remember negligence is a tort` this is saved as a `key: value` pair ` negligence: tort `.  When I later ask `wigmore what is negligence?` the bot will remind me that `negligence is a tort`.
 
@@ -18,7 +18,7 @@ This doesn't mean that Wigmore **knows** what a tort **is**.   (It's not artific
 
 AI or (in this case) not, it's a simple way to create collections of structured data using plain English sytax.  What's done with the data is a different question.
 
- **B. Wigmore can  help perform research. **  
+**B. Wigmore can  help perform research.**  
 
 If you write `wigmore abstract negligence` it will return a definition culled from on-line searches.  Now, the result is of course only as good as the search engine references that Wigmore is provided in the `abstract` script (which could certainly be augmented). But it's a start.
 
