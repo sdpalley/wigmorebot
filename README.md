@@ -2,23 +2,26 @@
 
 This is a version of GitHub's Campfire bot, hubot, and inspired by [compleatang's](https://github.com/compleatang) Billings (of which this is a loose fork).  (Thanks,  Casey, for introducing me to Billings).   For lawyers out there who are wondering what the point of bot is, here are a couple of useful things that a Wigmore or Billings can do, with the right scripts added:
 
-1. Wigmore can 'remember ' things.  If I write `wigmore remember negligence is a tort` this is saved as a `key:value` pair.  When I later ask `wigmore what is negligence?` the bot will remind me that `negligence is a tort`.  
+1. Wigmore can 'remember ' things.  If I write `wigmore remember negligence is a tort` this is saved as a `key: value` pair ` negligence: tort `.  When I later ask `wigmore what is negligence?` the bot will remind me that `negligence is a tort`.    This doesn't mean that Wigmore **knows** what a tort **is**.   (It's not artificial intelligence).  And if doesn't distinguish (yet) between correct information ('negligence is a tort') and incorrect information ('negligence is a type of cheese').  However, it's a simple way to create collections of structured data using plain English sytax.  What's done with the data is a different question.
 
-2.   Wigmore can  perform research.  If you write `wigmore abstract negligence` it will return a definition culled from on-line searches.  Now, the result is of course only as good as the search engine references that Wigmore is provided in the `abstract` script.  But it's a start.
+2.   Wigmore can  help perform research.  If you write `wigmore abstract negligence` it will return a definition culled from on-line searches.  Now, the result is of course only as good as the search engine references that Wigmore is provided in the `abstract` script (which could certainly be augmented). But it's a start.
 
-3.  Wigmore can keep your calendar for you.
+3.  Wigmore can help keep your calendar for you.
 
-4.  Wigmore can check sports scores and monitor the news.
+4.  Wigmore can check the news for you.  (I don't have this features added, actually, but it could be by adding  `news.coffee` to `package.json` and then typing `wigmore news me on topic` in your interface.)
 
 5.  In short, Wigmore can automate the performance of many tasks -- either with existing scripts or ones that are created.  It will interact with you using plain English, on the command line or in a graphical user interface.
 
 It is pretty  darn cool.  And there's no reason why lawyers can't have robots too.
 
-While you don't have to be a skilled programmer to build your own bot, it does take some technical knowledge in order to meld together many (pre-built) moving parts.  Here are a couple of the rookie mistakes I made:
+While you don't have to be a skilled programmer to build your own bot, it does take some technical knowledge in order to meld together many (pre-built) moving parts.   And patience, particularly  if you're just starting. Full instructions are below.  For what it is worth, here are a couple of rookie mistakes I made:
 
-- You need 'redis' to run your bot locally . . . and you have start it .
+- You need 'redis' to run your bot locally and  have it remember stuff (this is known as 'persistence' and is discussed below).  Here's the rookie mistake -- you have start redis for the bot's brain to work .  I know, duh.  (What's redis?  It's a kind of server that the bot uses to save your `key:value` pairs and remember them later.   Here's a link to [redis.io](http://redis.io), for a real explanation.  Think of it as the place where your bot's memory lives.)
 
-- The scripts contain  'dependencies' -- if you look in the `package.json` file you'll see  a reference to
+- The scripts contain  'dependencies' -- if you look at a script you'll see a reference to `dependencies` at the top of the document.  Some scripts have 'em; some don't.  If you're a lawyer, think of it as a form of "incorporation by reference."  The script won't work if you don't include a reference to required dependencies in the `package.json` file.  It seems obvious but, well, it took me a little time with Professors Google and Stack Exchange to figure out what I was missing.
+
+- If something isn't workig right, look at your `{ }`s and `;`'s  -- half of my problems seem to be 'punctuation' formatting errors.
+
 
 ###### The original readme follows, below.  The instructions work way too well for me to mess with them.
 
