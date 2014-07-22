@@ -1,6 +1,22 @@
-# Wigmore:  Because Lawyers Should Have Robots Too.
+### Wigmore:  Because Lawyers Should Have Robots Too.
 
-This is a version of GitHub's Campfire bot, hubot. He's pretty cool.
+This is a version of GitHub's Campfire bot, hubot, and inspired by @compleatang's Billings (of which this is a loose fork).  (Thank you Casey for introducing me to this).   For lawyers out there who are wondering what the point of bot is, here are a couple of useful things that a Wigmore or Billings can do:
+
+1. Wigmore can 'remember ' things.  If I write `wigmore remember negligence is a tort` this is saved as a `key:value` pair.  When I later ask `wigmore what is negligence?` the bot will remind me that `negligence is a tort`.  
+
+2.   Wigmore can  perform research.  If you write `wigmore abstract negligence` it will return a definition culled from on-line searches.  Now, the result is of course only as good as the search engine references that Wigmore is provided in the `abstract` script.  But it's a start.
+
+3.  Wigmore can keep your calendar for you.
+
+4.  Wigmore can check sports scores and monitor the news.
+
+5.  In short, Wigmore can automate the performance of many tasks -- either with existing scripts or ones that are created.  It will interact with you using plain English, on the command line or in a graphical user interface.
+
+It is pretty  darn cool.  And there's no reason why lawyers can't have robots too.
+
+###### The original readme follows, below.  The instructions work way too well for me to mess with them.
+
+-----
 
 This version is designed to be deployed on [Heroku][heroku]. This README was generated for you by hubot to help get you started. Definitely update and improve to talk about your own instance, how to use and deploy, what functionality he has, etc!
 
@@ -139,7 +155,7 @@ UI.
     % heroku config:set HUBOT_CAMPFIRE_TOKEN="..."
 
 Get the numeric IDs of the rooms you want the bot to join, comma delimited. If
-you want the bot to connect to `https://mysubdomain.campfirenow.com/room/42` 
+you want the bot to connect to `https://mysubdomain.campfirenow.com/room/42`
 and `https://mysubdomain.campfirenow.com/room/1024` then you'd add it like this:
 
     % heroku config:set HUBOT_CAMPFIRE_ROOMS="42,1024"
