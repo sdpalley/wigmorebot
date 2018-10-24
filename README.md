@@ -1,16 +1,16 @@
-###Wigmore:  Because Lawyers Should Have Robots Too.
+# Wigmore:  Because Lawyers Should Have Robots Too. 
 
 ---
 
-####1.  What is this?
+**1.  What is this?**
 
 Wigmore is an implementation of GitHub's Campfire bot, hubot, inspired by [compleatang's](https://github.com/compleatang) Billings. Thanks,  Casey, for introducing me to Billings.  **You're welcome to copy/fork Wigmore, of course, but you're better off building your own from Github's original hubot code, which is [at https://github.com/github/hubot](https://github.com/github/hubot).**  
 
-####2. Why should lawyers care?
+**2. Why should lawyers care?**
 
 For lawyers out there who are wondering what the point of bot is, here are a couple of useful things that a Wigmore or Billings can do, with the right scripts added:
 
-**A.  Wigmore can help us 'remember ' things.**  
+*A.  Wigmore can help us 'remember ' things.* 
 
 If I write    `wigmore remember negligence is a tort` this is saved as a `key: value` pair ` negligence: tort `.  When I later ask `wigmore what is negligence?` the bot will remind me that `negligence is a tort`.
 
@@ -18,23 +18,23 @@ This doesn't mean that Wigmore **knows** what a tort **is**.   (It's not artific
 
 AI or (in this case) not, it's a simple way to create collections of structured data using plain English sytax.  What's done with the data is a different question.
 
-**B. Wigmore can  help perform research.**  
+*B. Wigmore can  help perform research.*
 
 If you write `wigmore abstract negligence` it will return a definition culled from on-line searches.  Now, the result is of course only as good as the search engine references that Wigmore is provided in the `abstract` script (which could certainly be augmented). But it's a start.
 
-**C.  Wigmore can help keep your calendar for you.**
+*C.  Wigmore can help keep your calendar for you.*
 
-**D.  Wigmore can check the news for you.**  
+*D.  Wigmore can check the news for you.*  
 
 I don't have this features added, actually, but it could be by adding  `news.coffee` to `package.json` and then typing `wigmore news me on topic` in your interface.  Not a bad thing to try if you're just getting started.
 
-**E.  Wigmore helps with automation of many repetitive tasks, using plain English.**
+*E.  Wigmore helps with automation of many repetitive tasks, using plain English.*
 
 In short, Wigmore can automate the performance of many tasks -- either with existing scripts or ones that are created.  It will interact with you using plain English, on the command line or in a graphical user interface.  And it is pretty  darn cool.  
 
 And there's no reason why lawyers can't have robots too.
 
-**3. Caveat/Advice if You're Just Getting Started**
+*3. Caveat/Advice if You're Just Getting Started*
 
 While you don't have to be a skilled programmer to build your own bot, it does take some technical knowledge in order to meld together many (pre-built) moving parts.  (To my programmer friends, most of the world isn't as familiar with things like git, node, heroku etc -- there is a learning curve for most of us -- thank you for your continued patience with neophytes).  And patience, particularly  if you're just starting. Full instructions are below.  
 
@@ -48,7 +48,7 @@ For what it is worth, here are a couple of rookie mistakes I made:
 
 - If something isn't workig right, look at your `{ }`s and `;`'s  -- half of my problems seem to be 'punctuation' formatting errors.
 
-###Conclusion
+## Conclusion
 
 Github's original readme follows, below.  The instructions work way too well for me to mess with them.
 
